@@ -13,45 +13,53 @@ import "./user.scss";
 import { useParams } from "react-router-dom";
 import { FaCheck } from "react-icons/fa";
 
-type Info = {
+interface Info {
   firstName: string;
   lastName: string;
   img: string;
   email: string;
   phone: string;
   createdAt: string;
-  verified: boolean;
-};
+  verified?: boolean;
+}
 
-type Activity = {
+interface Activity {
   id: number;
   text: string;
   time: string;
-};
+}
 
-type Chart = {
+interface Chart {
   dataKeys: { name: string; color: string }[];
-  data: { name: string; [key: string]: number }[];
-};
+  data: { name: string; visits: number; clicks: number }[];
+}
 
-type User = {
-  userId: number | undefined;
+interface User {
+  id: number;
   info: Info;
   chart: Chart | null;
   activities: Activity[] | null;
-};
+}
 
 const User = () => {
-  const { id } = useParams();
+  const { userId } = useParams<{ userId: string }>();
 
-  const { id: userId, ...info } = getUserById(parseInt(id));
-  const userStatistics = statistics.find((stat) => stat.userId === userId);
+  const u = getUserById(parseInt(userId!, 10));
+
+  if (!u) {
+    // Handle the case when user is not found
+    return <div>User not found</div>;
+  }
+
+  const { id, ...info } = u;
+
+  const userStatistics = statistics.find((stat) => stat.userId === id);
   const userActivities = activities
-    .filter((activity) => activity.userId === userId)
+    .filter((activity) => activity.userId === id)
     .map(({ userId, ...rest }) => rest);
 
   const user: User = {
-    userId,
+    id,
     info,
     chart: userStatistics
       ? { dataKeys: userStatistics.dataKeys, data: userStatistics.data }

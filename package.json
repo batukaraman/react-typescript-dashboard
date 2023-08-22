@@ -12,25 +12,25 @@
   "dependencies": {
     "@emotion/react": "^11.11.1",
     "@emotion/styled": "^11.11.0",
-    "@mui/material": "^5.14.4",
-    "@mui/x-data-grid": "^6.11.0",
+    "@mui/material": "^5.14.5",
+    "@mui/x-data-grid": "^6.11.2",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-icons": "^4.10.1",
-    "react-router-dom": "6",
-    "recharts": "^2.7.2",
-    "sass": "^1.64.1"
+    "react-router-dom": "^6.15.0",
+    "recharts": "^2.7.3",
+    "sass": "^1.66.1"
   },
   "devDependencies": {
-    "@types/react": "^18.2.14",
-    "@types/react-dom": "^18.2.6",
-    "@typescript-eslint/eslint-plugin": "^5.61.0",
-    "@typescript-eslint/parser": "^5.61.0",
-    "@vitejs/plugin-react": "^4.0.1",
-    "eslint": "^8.44.0",
+    "@types/react": "^18.2.21",
+    "@types/react-dom": "^18.2.7",
+    "@typescript-eslint/eslint-plugin": "^5.62.0",
+    "@typescript-eslint/parser": "^5.62.0",
+    "@vitejs/plugin-react": "^4.0.4",
+    "eslint": "^8.47.0",
     "eslint-plugin-react-hooks": "^4.6.0",
-    "eslint-plugin-react-refresh": "^0.4.1",
-    "typescript": "^5.0.2",
-    "vite": "^4.4.0"
+    "eslint-plugin-react-refresh": "^0.4.3",
+    "typescript": "^5.1.6",
+    "vite": "^4.4.9"
   }
 }
