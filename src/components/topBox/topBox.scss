@@ -1,0 +1,41 @@
+.topBox {
+  h1 {
+    margin-bottom: 16px;
+  }
+
+  .list {
+    .listItem {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-bottom: 24px;
+      .user {
+        display: flex;
+        gap: 16px;
+        img {
+          width: 32px;
+          height: 32px;
+          object-fit: cover;
+          border-radius: 50%;
+        }
+
+        .userTexts {
+          display: flex;
+          flex-direction: column;
+          gap: 4px;
+
+          .username {
+            font-weight: 500;
+          }
+          .email {
+            font-size: 13px;
+          }
+        }
+      }
+
+      .amount {
+        font-weight: 500;
+      }
+    }
+  }
+}
