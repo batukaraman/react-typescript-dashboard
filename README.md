@@ -1,5 +1,5 @@
 
-# React Dashboard
+# React & TypeScript Dashboard
 
 ![Dashboard Mockup](https://gcdnb.pbrd.co/images/hWFN0SFxBBH1.png)
 
