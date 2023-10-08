@@ -13,7 +13,7 @@ This project is a simple test project using React and TypeScript. My main goal i
 
 ## Demo
 
-Demo available on this [page] (https://react-dashboard-batukaraman.netlify.app).
+Demo available on this [page](https://react-dashboard-batukaraman.netlify.app).
 
 ## Goals
 
@@ -54,7 +54,7 @@ The project should now be up and running at http://localhost:3000.
 
 ## Contact
 
-If you have questions or feedback, please contact [email@example.com](mailto:batuhankaraman0@hotmail.com).
+If you have questions or feedback, please contact [batuhankaraman0@hotmail.com](mailto:batuhankaraman0@hotmail.com).
 
 ## License
 
